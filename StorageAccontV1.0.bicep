@@ -2,7 +2,7 @@
 param location string = 'westeurope'
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
-  name: 'hekatonStorage'
+  name: 'hekatonstorage'
   location: location
   sku: {
     name: 'Standard_LRS'
