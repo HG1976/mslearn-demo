@@ -1,10 +1,12 @@
-resource symbolicname 'Microsoft.Resources/resourceGroups@2021-04-01' = {
-  name: 'string'
-  location: 'string'
-  tags: {
-    tagName1: 'tagValue1'
-    tagName2: 'tagValue2'
-  }
-  managedBy: 'string'
-  properties: {}
+// =========== main.bicep ===========
+@description('Specifies the location for resources.')
+param location string = 'westus2'
+
+// Setting target scope
+targetScope = 'subscription'
+
+// Creating resource group
+resource hekatondevrg 'Microsoft.Resources/resourceGroups@2021-01-01' = {
+  name: 'hekatondevrg'
+  location: location
 }
