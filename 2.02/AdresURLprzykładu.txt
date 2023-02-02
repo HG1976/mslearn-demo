@@ -1,0 +1,6 @@
+https://ochzhen.com/blog/deploy-azure-bicep-in-cicd-pipeline#sample-bicep-file-and-parameters
+
+After Bicep files are created, most likely we will want to use them to deploy our resources to Azure in some way. 
+Obviously, this is the main reason why Bicep files and ARM templates exist.
+The best way to deploy infrastructure code (Bicep files and ARM templates) is through CI/CD pipeline. 
+In this post, we will look how to achieve that with Azure DevOps Pipelines.
